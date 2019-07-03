@@ -15,6 +15,11 @@
 		CE4E6F1221FC87F000B1A22A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4E6F1021FC87F000B1A22A /* LaunchScreen.storyboard */; };
 		CE4E6F1D21FC87F100B1A22A /* LoginWithCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E6F1C21FC87F100B1A22A /* LoginWithCoreDataTests.swift */; };
 		CE4E6F2821FC87F100B1A22A /* LoginWithCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E6F2721FC87F100B1A22A /* LoginWithCoreDataUITests.swift */; };
+		CE4E6F3721FC882900B1A22A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4E6F3621FC882900B1A22A /* CoreData.framework */; };
+		CE4E6F3921FC8C2800B1A22A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E6F3821FC8C2800B1A22A /* RegisterViewController.swift */; };
+		CE4E6F3B21FC8CAC00B1A22A /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E6F3A21FC8CAC00B1A22A /* DatabaseHandler.swift */; };
+		CE4E6F3E21FCB95900B1A22A /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E6F3C21FCB95900B1A22A /* Student+CoreDataClass.swift */; };
+		CE4E6F3F21FCB95900B1A22A /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4E6F3D21FCB95900B1A22A /* Student+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		CE4E6F2321FC87F100B1A22A /* LoginWithCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginWithCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4E6F2721FC87F100B1A22A /* LoginWithCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithCoreDataUITests.swift; sourceTree = "<group>"; };
 		CE4E6F2921FC87F100B1A22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4E6F3621FC882900B1A22A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE4E6F3821FC8C2800B1A22A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CE4E6F3A21FC8CAC00B1A22A /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
+		CE4E6F3C21FCB95900B1A22A /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CE4E6F3D21FCB95900B1A22A /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4E6F3721FC882900B1A22A /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 				CE4E6F1B21FC87F100B1A22A /* LoginWithCoreDataTests */,
 				CE4E6F2621FC87F100B1A22A /* LoginWithCoreDataUITests */,
 				CE4E6F0221FC87EF00B1A22A /* Products */,
+				CE4E6F3521FC882900B1A22A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +114,10 @@
 				CE4E6F0421FC87EF00B1A22A /* AppDelegate.swift */,
 				CE4E6F0621FC87EF00B1A22A /* ViewController.swift */,
 				CE4E6F0821FC87EF00B1A22A /* Main.storyboard */,
+				CE4E6F3A21FC8CAC00B1A22A /* DatabaseHandler.swift */,
+				CE4E6F3821FC8C2800B1A22A /* RegisterViewController.swift */,
+				CE4E6F3C21FCB95900B1A22A /* Student+CoreDataClass.swift */,
+				CE4E6F3D21FCB95900B1A22A /* Student+CoreDataProperties.swift */,
 				CE4E6F0E21FC87F000B1A22A /* Assets.xcassets */,
 				CE4E6F1021FC87F000B1A22A /* LaunchScreen.storyboard */,
 				CE4E6F1321FC87F000B1A22A /* Info.plist */,
@@ -126,6 +142,14 @@
 				CE4E6F2921FC87F100B1A22A /* Info.plist */,
 			);
 			path = LoginWithCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		CE4E6F3521FC882900B1A22A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE4E6F3621FC882900B1A22A /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4E6F3B21FC8CAC00B1A22A /* DatabaseHandler.swift in Sources */,
+				CE4E6F3E21FCB95900B1A22A /* Student+CoreDataClass.swift in Sources */,
 				CE4E6F0D21FC87EF00B1A22A /* LoginWithCoreData.xcdatamodeld in Sources */,
 				CE4E6F0721FC87EF00B1A22A /* ViewController.swift in Sources */,
 				CE4E6F0521FC87EF00B1A22A /* AppDelegate.swift in Sources */,
+				CE4E6F3921FC8C2800B1A22A /* RegisterViewController.swift in Sources */,
+				CE4E6F3F21FCB95900B1A22A /* Student+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
